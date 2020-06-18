@@ -5,28 +5,32 @@ import {createStore, combineReducers, AnyAction} from 'redux';
 import {Provider} from 'react-redux';
 import {enableScreens} from 'react-native-screens';
 import {composeWithDevTools} from 'redux-devtools-extension';
+import {NavigationContainer} from '@react-navigation/native';
 
 import {StoreState} from './app/types';
 import DrawerNavigation from './app/components/navigation/drawer-navigation';
+import productsReducer from './app/reducers/products';
 
 enableScreens();
 
 const rootReducer = combineReducers<StoreState, AnyAction>({
-  products: [],
+  products: productsReducer,
 });
 
 const composeEnhancers = composeWithDevTools({});
 
 const store = createStore(rootReducer, composeEnhancers());
 
-const App = () => {
+const App: React.FunctionComponent = () => {
   return (
     <>
       <StatusBar
         barStyle={Platform.OS === 'ios' ? 'dark-content' : 'default'}
       />
       <Provider store={store}>
-        <DrawerNavigation />
+        <NavigationContainer>
+          <DrawerNavigation />
+        </NavigationContainer>
       </Provider>
     </>
   );
