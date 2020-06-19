@@ -38,9 +38,10 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>FontAwesome.ttf</string>
 		<string>GrandHotel-Regular.otf</string>
 		<string>blackjack.otf</string>
 	</array>
