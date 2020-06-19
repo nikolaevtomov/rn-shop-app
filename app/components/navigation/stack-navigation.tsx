@@ -38,6 +38,17 @@ const StackNavigation = () => (
             />
           </HeaderButtons>
         ),
+        headerRight: () => (
+          <HeaderButtons {...navigation}>
+            <Item
+              title="Shipping Card"
+              iconSize={30}
+              color={COLOURS.white}
+              iconName="shopping-cart"
+              onPress={() => navigation.navigate('Card')}
+            />
+          </HeaderButtons>
+        ),
         ...HEADER_STYLE,
       })}
       name="Products"
