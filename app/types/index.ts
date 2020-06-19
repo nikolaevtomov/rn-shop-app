@@ -9,4 +9,5 @@ export interface ProductProps {
 
 export interface StoreState {
   products: Array<ProductProps>;
+  card: Array<ProductProps>;
 }
