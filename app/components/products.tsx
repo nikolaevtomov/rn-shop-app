@@ -1,32 +1,32 @@
 import React from 'react';
-import {View, StyleSheet, Text, FlatList} from 'react-native';
+import {FlatList} from 'react-native';
 import {connect} from 'react-redux';
 
-import {StoreState} from '../types';
-import Fonts from '../utils/fonts';
+import Product from './product';
+import {StoreState, ProductProps} from '../types';
+// import Fonts from '../utils/fonts';
 
-interface OwnProps {}
+interface OwnProps {
+  navigation: any;
+}
 
 interface StateProps {
-  products: any;
+  products: Array<ProductProps>;
 }
 
 interface DispatchProps {}
 
 type Props = OwnProps & StateProps & DispatchProps;
 
-const Products: React.FunctionComponent<Props> = ({products}) => {
+const Products: React.FunctionComponent<Props> = ({products, navigation}) => {
   return (
-    <View style={styles.screen}>
-      <Text style={Fonts.jack}>Example</Text>
-      {/* <FlatList data={products} renderItem /> */}
-    </View>
+    <FlatList
+      data={products}
+      renderItem={Product(navigation)}
+      keyExtractor={(item: ProductProps) => item.id}
+    />
   );
 };
-
-const styles = StyleSheet.create({
-  screen: {},
-});
 
 const mapStateToProps = (state: StoreState): StateProps => ({
   products: state.products,

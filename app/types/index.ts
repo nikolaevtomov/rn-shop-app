@@ -1,4 +1,4 @@
-export interface Product {
+export interface ProductProps {
   id: string;
   ownerId: string;
   title: string;
@@ -8,5 +8,5 @@ export interface Product {
 }
 
 export interface StoreState {
-  products: Array<Product>;
+  products: Array<ProductProps>;
 }

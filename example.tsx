@@ -18,7 +18,7 @@ type Props = OwnProps & StateProps & DispatchProps;
 const Example: React.FunctionComponent<Props> = ({}) => {
   return (
     <View style={styles.screen}>
-      <Text style={Fonts.kingthings}>Example</Text>
+      <Text style={Fonts.jack}>Example</Text>
     </View>
   );
 };

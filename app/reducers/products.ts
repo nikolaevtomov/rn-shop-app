@@ -1,3 +1,5 @@
+import {ProductProps} from '../types';
+
 class Product {
   id: string;
   ownerId: string;
@@ -23,7 +25,7 @@ class Product {
   }
 }
 
-const PRODUCTS: Array<Product> = [
+const PRODUCTS: Array<ProductProps> = [
   new Product(
     'p1',
     'u1',
@@ -74,7 +76,7 @@ const PRODUCTS: Array<Product> = [
   ),
 ];
 
-const initialState: Array<Product> = PRODUCTS;
+const initialState: Array<ProductProps> = PRODUCTS;
 
 const productsReducer = (state = initialState, action: any) => {
   switch (action.type) {
