@@ -5,8 +5,8 @@ export default StyleSheet.create({
     fontFamily: 'GrandHotel-Regular',
     fontSize: 28,
   },
-  kingthings: {
-    fontFamily: 'Kingthings_Wrote',
+  jack: {
+    fontFamily: 'blackjack',
     fontSize: 28,
   },
 });

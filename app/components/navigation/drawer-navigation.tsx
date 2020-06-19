@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createStackNavigator} from '@react-navigation/stack';
 // import TabsNavigation from './tab-navigation';
 // import FiltersStackNavigation from './filters-stack-navigation';
 // import {COLOURS} from '../../utils/colours';
 // import Fonts from '../../utils/fonts';
-
-const Drawer = createDrawerNavigator();
+import Products from '../products';
 
 function Feed() {
   return (
@@ -24,13 +24,22 @@ function Article() {
   );
 }
 
-function DrawerNavigation() {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="Feed" component={Feed} />
-      <Drawer.Screen name="Article" component={Article} />
-    </Drawer.Navigator>
-  );
-}
+const Stack = createStackNavigator();
+
+const StackNavigation = () => (
+  <Stack.Navigator>
+    <Stack.Screen name="Products" component={Products} />
+    <Stack.Screen name="Feed" component={Feed} />
+  </Stack.Navigator>
+);
+
+const Drawer = createDrawerNavigator();
+
+const DrawerNavigation = () => (
+  <Drawer.Navigator>
+    <Drawer.Screen name="Products" component={StackNavigation} />
+    <Drawer.Screen name="Article" component={Article} />
+  </Drawer.Navigator>
+);
 
 export default DrawerNavigation;

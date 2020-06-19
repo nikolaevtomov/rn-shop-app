@@ -1,3 +1,12 @@
+export interface Product {
+  id: string;
+  ownerId: string;
+  title: string;
+  imageUrl: string;
+  description: string;
+  price: number;
+}
+
 export interface StoreState {
-  products: Array<any>;
+  products: Array<Product>;
 }

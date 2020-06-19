@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, FlatList} from 'react-native';
 import {connect} from 'react-redux';
 
-import {StoreState} from './app/types';
-import Fonts from './app/utils/fonts';
+import {StoreState} from '../types';
+import Fonts from '../utils/fonts';
 
 interface OwnProps {}
 
@@ -15,10 +15,11 @@ interface DispatchProps {}
 
 type Props = OwnProps & StateProps & DispatchProps;
 
-const Example: React.FunctionComponent<Props> = ({}) => {
+const Products: React.FunctionComponent<Props> = ({products}) => {
   return (
     <View style={styles.screen}>
-      <Text style={Fonts.kingthings}>Example</Text>
+      <Text style={Fonts.jack}>Example</Text>
+      {/* <FlatList data={products} renderItem /> */}
     </View>
   );
 };
@@ -31,4 +32,4 @@ const mapStateToProps = (state: StoreState): StateProps => ({
   products: state.products,
 });
 
-export default connect(mapStateToProps, {})(Example);
+export default connect(mapStateToProps, {})(Products);
