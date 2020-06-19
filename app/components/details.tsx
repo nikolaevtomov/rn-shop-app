@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text, Image, Button} from 'react-native';
+import {View, ScrollView, StyleSheet, Text, Image, Button} from 'react-native';
 import {connect} from 'react-redux';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RouteProp} from '@react-navigation/native';
@@ -20,21 +20,42 @@ const Details: React.FunctionComponent<Props> = ({route}) => {
   const {item} = route.params;
 
   return (
-    <View style={styles.details}>
-      <Image source={{uri: item.imageUrl}} />
-      <Text style={Fonts.jack}>{item.title}</Text>
-      <Text style={Fonts.jack}>{item.price}</Text>
-      <View style={styles.buttonsWrapper}>
-        <Button title="View Details" onPress={() => {}} />
-        <Button title="Cart" onPress={() => {}} />
+    <ScrollView>
+      <Image style={styles.image} source={{uri: item.imageUrl}} />
+
+      <View style={styles.details}>
+        <View style={styles.buttonsWrapper}>
+          <Button title="Add to card" onPress={() => {}} />
+        </View>
+
+        <Text style={{...Fonts.jack, ...styles.price}}>
+          £{item.price.toFixed(2)}
+        </Text>
+
+        <Text style={{...Fonts.jack, ...styles.description}}>
+          {item.description}
+        </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  details: {},
+  details: {
+    padding: 20,
+  },
   buttonsWrapper: {},
+  image: {
+    width: '100%',
+    height: 300,
+  },
+  price: {
+    fontSize: 20,
+    marginVertical: 20,
+  },
+  description: {
+    fontSize: 14,
+  },
 });
 
 export default connect(null, {})(Details);
