@@ -1,13 +1,14 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import {connect} from 'react-redux';
+import {StackNavigationProp} from '@react-navigation/stack';
 
+import {RootStackParamList} from './navigation/types';
 import Product from './product';
 import {StoreState, ProductProps} from '../types';
-// import Fonts from '../utils/fonts';
 
 interface OwnProps {
-  navigation: any;
+  navigation: StackNavigationProp<RootStackParamList>;
 }
 
 interface StateProps {

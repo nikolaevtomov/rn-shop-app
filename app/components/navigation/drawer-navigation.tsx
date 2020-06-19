@@ -1,11 +1,8 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {createStackNavigator} from '@react-navigation/stack';
-
-import Products from '../products';
-import Details from '../details';
-import {RootStackParamList, RootDrawerParamList} from '../navigation/types';
+import StackNavigation from './stack-navigation';
+import {RootDrawerParamList} from './types';
 
 function Article() {
   return (
@@ -14,15 +11,6 @@ function Article() {
     </View>
   );
 }
-
-const Stack = createStackNavigator<RootStackParamList>();
-
-const StackNavigation = () => (
-  <Stack.Navigator>
-    <Stack.Screen name="Products" component={Products} />
-    <Stack.Screen name="Details" component={Details} />
-  </Stack.Navigator>
-);
 
 const Drawer = createDrawerNavigator<RootDrawerParamList>();
 

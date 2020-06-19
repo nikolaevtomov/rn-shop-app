@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Image, Button} from 'react-native';
 import {connect} from 'react-redux';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RouteProp} from '@react-navigation/native';
@@ -20,14 +20,21 @@ const Details: React.FunctionComponent<Props> = ({route}) => {
   const {item} = route.params;
 
   return (
-    <View style={styles.screen}>
+    <View style={styles.details}>
+      <Image source={{uri: item.imageUrl}} />
       <Text style={Fonts.jack}>{item.title}</Text>
+      <Text style={Fonts.jack}>{item.price}</Text>
+      <View style={styles.buttonsWrapper}>
+        <Button title="View Details" onPress={() => {}} />
+        <Button title="Cart" onPress={() => {}} />
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  screen: {},
+  details: {},
+  buttonsWrapper: {},
 });
 
 export default connect(null, {})(Details);
