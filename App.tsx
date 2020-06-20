@@ -8,7 +8,7 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {StoreState} from './app/types';
-import DrawerNavigation from './app/components/navigation/drawer-navigation';
+import DrawerNavigation from './app/components/navigation/root-drawer-navigation';
 import productsReducer from './app/reducers/products';
 import cardReducer from './app/reducers/card';
 

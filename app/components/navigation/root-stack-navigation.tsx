@@ -10,7 +10,7 @@ import Fonts from '../../utils/fonts';
 import Details from '../details';
 import {RootStackParamList} from './types';
 
-const HEADER_STYLE = {
+export const HEADER_STYLE = {
   headerStyle: {
     backgroundColor: COLOURS.ternary,
   },
@@ -23,7 +23,7 @@ const HEADER_STYLE = {
 
 const Stack = createStackNavigator<RootStackParamList>();
 
-const StackNavigation = () => (
+const RootStackNavigation = () => (
   <Stack.Navigator>
     <Stack.Screen
       options={({navigation}) => ({
@@ -67,4 +67,4 @@ const StackNavigation = () => (
   </Stack.Navigator>
 );
 
-export default StackNavigation;
+export default RootStackNavigation;

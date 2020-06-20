@@ -7,5 +7,9 @@ export type RootStackParamList = {
 
 export type RootDrawerParamList = {
   Products: undefined;
-  Article: undefined;
+  Card: undefined;
+};
+
+export type CardStackParamList = {
+  Card: undefined;
 };
