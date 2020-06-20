@@ -16,12 +16,13 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rnShopAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnShopAppTests.m */; };
+		3AC9A5B4249D4EB200A11CD5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A5B3249D4EB200A11CD5 /* FontAwesome.ttf */; };
 		476A585257293E0BCABD6E32 /* libPods-rnShopApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6741CB4222525FAEC4E590 /* libPods-rnShopApp-tvOS.a */; };
 		68DA082A1ECB68574565D8E5 /* libPods-rnShopApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F64467A70F2D5ABF2C9271A /* libPods-rnShopApp-tvOSTests.a */; };
-		BD3C79045D6D44A45ACDC6D6 /* libPods-rnShopApp-rnShopAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55178BFFFB96D11D0108A83B /* libPods-rnShopApp-rnShopAppTests.a */; };
-		CE6AFD92329BDBE52B7B8C03 /* libPods-rnShopApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D845AB017ACA75AF90A3E9 /* libPods-rnShopApp.a */; };
 		AC1C2D638B4A4BDB99ACBA24 /* GrandHotel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD35DE4EAFE748A3BB89CA5A /* GrandHotel-Regular.otf */; };
-		62A869595997412E812304F4 /* Kingthings_Wrote.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8500C232DBF469AB4A6227A /* Kingthings_Wrote.ttf */; };
+		BD3C79045D6D44A45ACDC6D6 /* libPods-rnShopApp-rnShopAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55178BFFFB96D11D0108A83B /* libPods-rnShopApp-rnShopAppTests.a */; };
+		C3F598E818F7455C9B2E5707 /* blackjack.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17F59554AEBF45248F1804F5 /* blackjack.otf */; };
+		CE6AFD92329BDBE52B7B8C03 /* libPods-rnShopApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D845AB017ACA75AF90A3E9 /* libPods-rnShopApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		00E356EE1AD99517003FC87E /* rnShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnShopAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnShopAppTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* rnShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Shop App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnShopApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = rnShopApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -54,9 +55,11 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rnShopApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnShopApp/main.m; sourceTree = "<group>"; };
 		17E1EE627D4C01FEE99FA254 /* Pods-rnShopApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp.debug.xcconfig"; path = "Target Support Files/Pods-rnShopApp/Pods-rnShopApp.debug.xcconfig"; sourceTree = "<group>"; };
+		17F59554AEBF45248F1804F5 /* blackjack.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = blackjack.otf; path = ../assets/fonts/blackjack.otf; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* rnShopApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rnShopApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* rnShopApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rnShopApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35645C6AF4C32EE0E4FCD019 /* Pods-rnShopApp-rnShopAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp-rnShopAppTests.debug.xcconfig"; path = "Target Support Files/Pods-rnShopApp-rnShopAppTests/Pods-rnShopApp-rnShopAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3AC9A5B3249D4EB200A11CD5 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		3B6741CB4222525FAEC4E590 /* libPods-rnShopApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnShopApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F64467A70F2D5ABF2C9271A /* libPods-rnShopApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnShopApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55178BFFFB96D11D0108A83B /* libPods-rnShopApp-rnShopAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnShopApp-rnShopAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,13 +67,12 @@
 		954F6DC5E17A84572B5E1D78 /* Pods-rnShopApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rnShopApp-tvOS/Pods-rnShopApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		992C90FA4DCAE8501C4D8A96 /* Pods-rnShopApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rnShopApp-tvOS/Pods-rnShopApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		9F78279B62AA174212102A95 /* Pods-rnShopApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rnShopApp-tvOSTests/Pods-rnShopApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD35DE4EAFE748A3BB89CA5A /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GrandHotel-Regular.otf"; path = "../assets/fonts/GrandHotel-Regular.otf"; sourceTree = "<group>"; };
 		D4D845AB017ACA75AF90A3E9 /* libPods-rnShopApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnShopApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9AF8981D1CB26C973E44B4 /* Pods-rnShopApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rnShopApp-tvOSTests/Pods-rnShopApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F451C16AE1B698B9B7418430 /* Pods-rnShopApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnShopApp.release.xcconfig"; path = "Target Support Files/Pods-rnShopApp/Pods-rnShopApp.release.xcconfig"; sourceTree = "<group>"; };
-		AD35DE4EAFE748A3BB89CA5A /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; name = "GrandHotel-Regular.otf"; path = "../assets/fonts/GrandHotel-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A8500C232DBF469AB4A6227A /* Kingthings_Wrote.ttf */ = {isa = PBXFileReference; name = "Kingthings_Wrote.ttf"; path = "../assets/fonts/Kingthings_Wrote.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		13B07FAE1A68108700A75B9A /* rnShopApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AC9A5B2249D4DE600A11CD5 /* Fonts */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -153,6 +156,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3AC9A5B2249D4DE600A11CD5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9A5B3249D4EB200A11CD5 /* FontAwesome.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		52D3D207E8D24B1C82813F61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD35DE4EAFE748A3BB89CA5A /* GrandHotel-Regular.otf */,
+				17F59554AEBF45248F1804F5 /* blackjack.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		725EAEF44942EF8ACF19B2A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +185,6 @@
 				DB9AF8981D1CB26C973E44B4 /* Pods-rnShopApp-tvOSTests.debug.xcconfig */,
 				9F78279B62AA174212102A95 /* Pods-rnShopApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -195,23 +214,13 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* rnShopApp.app */,
+				13B07F961A680F5B00A75B9A /* Shop App.app */,
 				00E356EE1AD99517003FC87E /* rnShopAppTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* rnShopApp-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* rnShopApp-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		52D3D207E8D24B1C82813F61 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				AD35DE4EAFE748A3BB89CA5A /* GrandHotel-Regular.otf */,
-				A8500C232DBF469AB4A6227A /* Kingthings_Wrote.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -252,7 +261,7 @@
 			);
 			name = rnShopApp;
 			productName = rnShopApp;
-			productReference = 13B07F961A680F5B00A75B9A /* rnShopApp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Shop App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* rnShopApp-tvOS */ = {
@@ -354,9 +363,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3AC9A5B4249D4EB200A11CD5 /* FontAwesome.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				AC1C2D638B4A4BDB99ACBA24 /* GrandHotel-Regular.otf in Resources */,
-				62A869595997412E812304F4 /* Kingthings_Wrote.ttf in Resources */,
+				C3F598E818F7455C9B2E5707 /* blackjack.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +400,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		1A6DA01C5CA71949250B27A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -660,7 +670,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnShopApp;
+				PRODUCT_NAME = "Shop App";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -682,7 +692,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = rnShopApp;
+				PRODUCT_NAME = "Shop App";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

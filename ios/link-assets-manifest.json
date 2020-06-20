@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/.DS_Store",
+      "sha1": "df2fbeb1400acda0909a32c1cf6bf492f1121e07"
+    },
+    {
+      "path": "assets/fonts/GrandHotel-Regular.otf",
+      "sha1": "a3acf6eb441fc63734ffd27df1a624f818f95770"
+    },
+    {
+      "path": "assets/fonts/blackjack.otf",
+      "sha1": "1b2a79b3bf68d44c06a9e205c0b8378995491545"
+    }
+  ]
+}
